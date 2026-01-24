@@ -1,0 +1,3 @@
+- Assumed default iOS scheme name is `LibTerm`.
+- Used minimal Fastlane setup for CI build only.
+- TestFlight deployment requires secrets not available in this environment.

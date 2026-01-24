@@ -28,4 +28,7 @@ LibTerm contains a `package` command. With `package`, you can download and insta
 - [ios_system](https://github.com/holzschu/ios_system)
 - [OpenTerm](https://github.com/louisdh/openterm) (This is not a fork of OpenTerm but I used some code like the ANSI parser and I learned from it.)
 - [TabView](https://github.com/IMcD23/TabView)
+# GitHub Actions
+
+![iOS CI](https://github.com/realagiorganization/LibTerm/actions/workflows/ios-ci.yml/badge.svg)
 
