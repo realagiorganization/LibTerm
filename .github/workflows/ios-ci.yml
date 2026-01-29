@@ -17,6 +17,4 @@ jobs:
       - name: Install Fastlane
         run: gem install fastlane
       - name: Build app
-        run: |
-          fastlane init || true
-          fastlane gym --project LibTerm.xcodeproj --scheme LibTerm
+        run: fastlane ci_build

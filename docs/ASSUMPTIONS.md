@@ -1,3 +1,7 @@
 - Assumed default iOS scheme name is `LibTerm`.
 - Used minimal Fastlane setup for CI build only.
 - TestFlight deployment requires secrets not available in this environment.
+- Assumed LLM API secrets are provided via GitHub Actions secrets using `LLM_API_KEY`.
+- Assumed LLM endpoint defaults to `https://api.openai.com/v1` unless `LLM_API_BASE_URL` is set.
+- Assumed TestFlight uploads use App Store Connect API key secrets provided at build time.
+- Assumed optional `LLM_REQUEST_COMMAND` can be set to invoke an opencode/codex CLI if preferred; otherwise the script falls back to a direct HTTPS request.
