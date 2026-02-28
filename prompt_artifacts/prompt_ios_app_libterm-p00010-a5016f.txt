@@ -1,7 +1,7 @@
 Prompt ID: prompt_ios_app_libterm-p00010-a5016f
-Timestamp: 2026-02-28T15:50:53.146067+00:00
+Timestamp: 2026-02-28T18:09:50.099956+00:00
 Source: discord
-Queue: a4f9d6d0f74247e0a95476cff2366424::prompt_queue::discord_1353735964635435100_1353735964635435100_1462823771390873818_realagicorp_iosapp_prompt_ios_app_libterm_1462823771390873818_json
+Queue: guild-1353735964635435100-run-22525714405::prompt_queue::discord_1353735964635435100_1353735964635435100_1462823771390873818_realagicorp_iosapp_prompt_ios_app_libterm_1462823771390873818_json
 Run: 1/1
 Content:
 Discord channel: prompt_ios_app_libterm
@@ -9,6 +9,7 @@ Channel ID: 1462823771390873818
 Queue label: prompt_ios_app_libterm
 Messages aggregated: 9
 Available repository: realagiorganization/LibTerm -> /tmp/repositories/realagiorganization_LibTerm
+Available repository: realagiorganization/LibTerm-Packages -> /tmp/repositories/realagiorganization_LibTerm-Packages
 
 Discord channel: prompt_ios_app_libterm | ID: 1462823771390873818 | Reaction filter: :white_check_mark:
 
