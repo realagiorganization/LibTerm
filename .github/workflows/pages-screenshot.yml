@@ -1,0 +1,40 @@
+name: Pages Screenshot
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * 1'
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        run: |
+          npm install playwright@1.41.2
+      - name: Capture screenshot
+        run: |
+          node <<'NODE'
+          const { chromium } = require('playwright');
+          const fs = require('fs');
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
+            await page.goto('https://libterm.app', { waitUntil: 'networkidle' });
+            await fs.promises.mkdir('docs/media', { recursive: true });
+            await page.screenshot({ path: 'docs/media/pages.png', fullPage: true });
+            await browser.close();
+          })();
+          NODE
+      - name: Commit screenshot
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update pages screenshot"
+          file_pattern: docs/media/pages.png

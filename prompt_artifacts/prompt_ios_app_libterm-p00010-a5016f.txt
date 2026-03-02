@@ -1,0 +1,31 @@
+Prompt ID: prompt_ios_app_libterm-p00010-a5016f
+Timestamp: 2026-02-28T18:09:50.099956+00:00
+Source: discord
+Queue: guild-1353735964635435100-run-22525714405::prompt_queue::discord_1353735964635435100_1353735964635435100_1462823771390873818_realagicorp_iosapp_prompt_ios_app_libterm_1462823771390873818_json
+Run: 1/1
+Content:
+Discord channel: prompt_ios_app_libterm
+Channel ID: 1462823771390873818
+Queue label: prompt_ios_app_libterm
+Messages aggregated: 9
+Available repository: realagiorganization/LibTerm -> /tmp/repositories/realagiorganization_LibTerm
+Available repository: realagiorganization/LibTerm-Packages -> /tmp/repositories/realagiorganization_LibTerm-Packages
+
+Discord channel: prompt_ios_app_libterm | ID: 1462823771390873818 | Reaction filter: :white_check_mark:
+
+Messages with required reaction:
+[1] (2026-01-19T14:59:31.944+00:00 | realagiadmin_29264 | id=1462823800302342206) Work in https://github.com/realagiorganization/LibTerm
+[2] (2026-01-19T15:43:27.755+00:00 | mermaid10121 | id=1462834855694831660) Develop GitHub actions that build test and deploy release version of app to TestFlight, add GitHub actions badges. Use fastlane
+[3] (2026-01-20T08:14:12.916+00:00 | mermaid10121 | id=1463084186771652670) https://github.com/realagiorganization/LibTerm-Packages add this repo as git subtree; maintain feature parity with #prompt_ios_app_a_shell and #prompt_ios_app_ish by continioulsy creating and testing with vhs installation integration script neccessary missing packages
+[4] (2026-01-21T17:57:09.711+00:00 | realagiadmin_29264 | id=1463593277948170251) test/screenshot github pages website
+Attachments: image.png: /out/1353735964635435100/_media/image-6aa07.png ; image.png: /out/1353735964635435100/_media/image-b8605.png ; image.png: /out/1353735964635435100/_media/image-23028.png
+[5] (2026-01-21T22:59:01.946+00:00 | realagiadmin_29264 | id=1463669246168141866) test/screenshot github pages website
+Attachments: image.png: /out/1353735964635435100/_media/image-8c5db.png ; image.png: /out/1353735964635435100/_media/image-e78a0.png ; image.png: /out/1353735964635435100/_media/image-33952.png
+[6] (2026-01-22T08:25:15.943+00:00 | mermaid10121 | id=1463811743439655055) Add badges for each GitHub action to README and gif of ui testing
+[7] (2026-01-25T20:21:26.235+00:00 | realagiadmin_29264 | id=1465079137504071691) Create DEVPLAN.md outlining steps for developing this project, mention there all external dependencies that leverage parts of functionality needed
+
+Create BDD test suite describing principal use cases
+
+Create GitHub actions launching BDD suite and add its badge to README. If behavior includes either console or UI / Web user interaction, record it with vhs action and post gif into README
+[8] (2026-01-27T21:26:40.269+00:00 | drybox | id=1465820329883599021) always_on_hint
+[9] (2026-01-29T09:29:01.127+00:00 | mermaid10121 | id=1466364502483140671) Write bdd test that uses encrypted uploaded into GitHub actions llm keys to make a request to installed via codex cli oh my opencode cli in tmux terminal, make sure that vhs tape of it is captured and presented in readme md by GitHub action separately

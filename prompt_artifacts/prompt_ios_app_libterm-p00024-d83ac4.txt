@@ -1,0 +1,17 @@
+Prompt ID: prompt_ios_app_libterm-p00024-d83ac4\nTimestamp: 2026-01-27T09:41:01.381693Z\nSource: discord\nQueue: 8f489b9255c748a6a903c8a04f7774fe::prompt_queue::discord_1353735964635435100_1353735964635435100_1462823771390873818_realagicorp_iosapp_prompt_ios_app_libterm_1462823771390873818_json\nRun: 1/1\nContent:\nDiscord channel: prompt_ios_app_libterm\nChannel ID: 1462823771390873818\nQueue label: prompt_ios_app_libterm\nMessages aggregated: 8\nAttachments saved for execution (6): attachments/image-23028.png, attachments/image-33952.png, attachments/image-6aa07.png, ... | mounted at .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4\nAttachment locations:\n- image-23028.png (53319 bytes) -> .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4/image-23028.png\n- image-33952.png (76623 bytes) -> .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4/image-33952.png\n- image-6aa07.png (136842 bytes) -> .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4/image-6aa07.png\n- image-8c5db.png (137630 bytes) -> .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4/image-8c5db.png\n- image-b8605.png (62032 bytes) -> .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4/image-b8605.png\n- image-e78a0.png (115758 bytes) -> .prompt_attachments/prompt_ios_app_libterm-p00024-d83ac4/image-e78a0.png\n\nDiscord channel: prompt_ios_app_libterm | ID: 1462823771390873818 | Reaction filter: :white_check_mark:
+
+Messages with required reaction:
+[1] (2026-01-19T14:59:31.944+00:00 | realagiadmin_29264 | id=1462823800302342206) Work in https://github.com/realagiorganization/LibTerm
+[2] (2026-01-19T15:43:27.755+00:00 | mermaid10121 | id=1462834855694831660) Develop GitHub actions that build test and deploy release version of app to TestFlight, add GitHub actions badges. Use fastlane
+[3] (2026-01-20T08:14:12.916+00:00 | mermaid10121 | id=1463084186771652670) https://github.com/realagiorganization/LibTerm-Packages add this repo as git subtree; maintain feature parity with #prompt_ios_app_a_shell and #prompt_ios_app_ish by continioulsy creating and testing with vhs installation integration script neccessary missing packages
+[4] (2026-01-21T17:57:09.711+00:00 | realagiadmin_29264 | id=1463593277948170251) test/screenshot github pages website
+Attachments: image.png: /out/1353735964635435100/_media/image-6aa07.png ; image.png: /out/1353735964635435100/_media/image-b8605.png ; image.png: /out/1353735964635435100/_media/image-23028.png
+[5] (2026-01-21T22:59:01.946+00:00 | realagiadmin_29264 | id=1463669246168141866) test/screenshot github pages website
+Attachments: image.png: /out/1353735964635435100/_media/image-8c5db.png ; image.png: /out/1353735964635435100/_media/image-e78a0.png ; image.png: /out/1353735964635435100/_media/image-33952.png
+[6] (2026-01-22T08:25:15.943+00:00 | mermaid10121 | id=1463811743439655055) Add badges for each GitHub action to README and gif of ui testing
+[7] (2026-01-25T19:48:29.308+00:00 | realagiadmin_29264 | id=1465070845670985953) always_on_hint
+[8] (2026-01-25T20:21:26.235+00:00 | realagiadmin_29264 | id=1465079137504071691) Create DEVPLAN.md outlining steps for developing this project, mention there all external dependencies that leverage parts of functionality needed
+
+Create BDD test suite describing principal use cases
+
+Create GitHub actions launching BDD suite and add its badge to README. If behavior includes either console or UI / Web user interaction, record it with vhs action and post gif into README\n

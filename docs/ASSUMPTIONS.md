@@ -1,0 +1,5 @@
+- LibTerm-Packages default branch is `master`; subtree added at `LibTerm-Packages/`.
+- GitHub Actions secrets are assumed configured: `LLM_API_KEY`, `LLM_API_BASE_URL`, `APP_STORE_CONNECT_*`, `APP_IDENTIFIER`, `APPLE_ID`, `APPLE_TEAM_ID`.
+- Placeholder GIF/PNG assets are committed so README badges and links do not break even when actions have not yet produced artifacts.
+- VHS recordings run on Ubuntu with tmux available; fastlane lanes run on macOS runners.
+- "oh my opencode" CLI is emulated via `scripts/bdd/ohmyopencode.sh` hitting the configured LLM endpoint.

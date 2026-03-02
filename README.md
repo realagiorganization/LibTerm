@@ -28,4 +28,17 @@ LibTerm contains a `package` command. With `package`, you can download and insta
 - [ios_system](https://github.com/holzschu/ios_system)
 - [OpenTerm](https://github.com/louisdh/openterm) (This is not a fork of OpenTerm but I used some code like the ANSI parser and I learned from it.)
 - [TabView](https://github.com/IMcD23/TabView)
+# GitHub Actions
 
+![iOS CI](https://github.com/realagiorganization/LibTerm/actions/workflows/ios-ci.yml/badge.svg)
+![BDD Suite](https://github.com/realagiorganization/LibTerm/actions/workflows/bdd.yml/badge.svg)
+![TestFlight Release](https://github.com/realagiorganization/LibTerm/actions/workflows/testflight.yml/badge.svg)
+![VHS Capture](https://github.com/realagiorganization/LibTerm/actions/workflows/vhs.yml/badge.svg)
+![Packages VHS](https://github.com/realagiorganization/LibTerm/actions/workflows/vhs-packages.yml/badge.svg)
+![Pages Screenshot](https://github.com/realagiorganization/LibTerm/actions/workflows/pages-screenshot.yml/badge.svg)
+
+## BDD/VHS Demo
+
+![LLM request via tmux](docs/media/llm_request.gif)
+![Packages install check](docs/media/packages_install.gif)
+![GitHub Pages preview](docs/media/pages.png)
