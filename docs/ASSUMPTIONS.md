@@ -1,7 +1,5 @@
-- Assumed default iOS scheme name is `LibTerm`.
-- Used minimal Fastlane setup for CI build only.
-- TestFlight deployment requires secrets not available in this environment.
-- Assumed LLM API secrets are provided via GitHub Actions secrets using `LLM_API_KEY`.
-- Assumed LLM endpoint defaults to `https://api.openai.com/v1` unless `LLM_API_BASE_URL` is set.
-- Assumed TestFlight uploads use App Store Connect API key secrets provided at build time.
-- Assumed optional `LLM_REQUEST_COMMAND` can be set to invoke an opencode/codex CLI if preferred; otherwise the script falls back to a direct HTTPS request.
+- LibTerm-Packages default branch is `master`; subtree added at `LibTerm-Packages/`.
+- GitHub Actions secrets are assumed configured: `LLM_API_KEY`, `LLM_API_BASE_URL`, `APP_STORE_CONNECT_*`, `APP_IDENTIFIER`, `APPLE_ID`, `APPLE_TEAM_ID`.
+- Placeholder GIF/PNG assets are committed so README badges and links do not break even when actions have not yet produced artifacts.
+- VHS recordings run on Ubuntu with tmux available; fastlane lanes run on macOS runners.
+- "oh my opencode" CLI is emulated via `scripts/bdd/ohmyopencode.sh` hitting the configured LLM endpoint.

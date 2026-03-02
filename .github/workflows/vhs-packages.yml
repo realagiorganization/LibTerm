@@ -1,0 +1,23 @@
+name: VHS Packages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tmux
+        run: sudo apt-get update && sudo apt-get install -y tmux
+      - name: Run VHS tape
+        uses: charmbracelet/vhs-action@v2
+        with:
+          path: vhs/packages_install.tape
+      - name: Commit VHS artifacts
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update VHS packages capture"
+          file_pattern: docs/media/packages_install.gif

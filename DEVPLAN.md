@@ -21,9 +21,10 @@
 
 ## CI Workflow Overview
 1. iOS CI builds with Fastlane (`fastlane ci_build`).
-2. BDD workflow installs Python requirements and runs `behave`.
-3. VHS workflow records the LLM request tape and commits the GIF artifact.
-4. TestFlight workflow uses Fastlane `beta` lane with App Store Connect API key.
+2. BDD workflow installs Python requirements, runs `behave`, and exercises the tmux LLM request using the "oh my opencode" shim.
+3. VHS workflows record both the LLM request and packages subtree tapes and commit GIF artifacts.
+4. GitHub Pages screenshot workflow captures the live site image.
+5. TestFlight workflow uses Fastlane `beta` lane with App Store Connect API key.
 
 ## Release Checklist
 1. Confirm `APP_IDENTIFIER` and `APPLE_TEAM_ID` secrets are correct.
@@ -34,7 +35,8 @@
 ## BDD Coverage
 - Project structure checks.
 - README documentation validation.
-- LLM request via tmux-driven script using encrypted secrets.
+- LLM request via tmux-driven script using encrypted secrets and optional `LLM_REQUEST_COMMAND` shim.
+- LibTerm-Packages subtree presence with required archives.
 
 ## Artifact Updates
 - `docs/media/llm_request.gif` recorded via VHS in CI.
